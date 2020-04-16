@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        {% block head %}
+            <title>Controle de Academia</title>
+        {% endblock %}
+
+        <link rel="stylesheet" href="/styles.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="links">
+               <a href="/instructors">Intrutores</a>
+                <a href="/members">Membros</a>
+                <input type="checkbox" id="switch" name="theme"/><label for="switch">Toggle</label>
+            </div>
+            
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <script src="/scripts.js"></script>
+
+    </body>
+</html>

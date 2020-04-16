@@ -1,0 +1,82 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://scontent.fpoa7-1.fna.fbcdn.net/v/t1.0-9/66299392_2298988686859662_5808224419163668480_n.jpg?_nc_cat=104&_nc_sid=09cbfe&_nc_ohc=cv8GPOuw_44AX8m00TK&_nc_ht=scontent.fpoa7-1.fna&oh=788879708aae847e31a42e2f5ec94f37&oe=5EBFD99D",
+      "name": "Nicolas Menezes",
+      "birth": 972518400000,
+      "gender": "M",
+      "email": "nicolasodeiocine@hotmail.com",
+      "weight": "85",
+      "height": "173",
+      "imc": "Entre 19 e 24"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://scontent.fpoa7-2.fna.fbcdn.net/v/t1.0-9/69355501_901441220219337_8339557012463419392_n.jpg?_nc_cat=105&_nc_sid=09cbfe&_nc_ohc=xUQTDeml_VcAX9rTQsU&_nc_ht=scontent.fpoa7-2.fna&oh=13a5f5b52434c9f31a940dad32125554&oe=5EBE5752",
+      "name": "Gabi Lunkes",
+      "birth": 986083200000,
+      "gender": "F",
+      "email": "Gabilunkes@gmail.com",
+      "weight": "65",
+      "height": "155",
+      "imc": "Entre 19 e 24"
+    }
+  ],
+  "instructors": [
+    {
+      "id": 2,
+      "avatar_url": "https://abrilvejasp.files.wordpress.com/2016/11/4980_marciapedroso.jpeg?quality=70&strip=info&w=902",
+      "name": "Isabela Palhares",
+      "birth": 1004486400000,
+      "gender": "F",
+      "services": "Crossfit, Musculação",
+      "created_at": 1585925838677
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://abrilvejasp.files.wordpress.com/2016/11/4965_alyne-soares.jpeg?quality=70&strip=info&w=920",
+      "name": "Rafaela Guimaraes",
+      "birth": 869184000000,
+      "gender": "F",
+      "services": "Musculação",
+      "created_at": 1586480777077
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://www.unicesumar.edu.br/blog/wp-content/uploads/2017/12/educacao-fisica-800x533.jpg",
+      "name": "Jonathan Rodrigues",
+      "birth": 777945600000,
+      "gender": "M",
+      "services": "Corrida, Físico",
+      "created_at": 1586483026303
+    },
+    {
+      "id": 6,
+      "avatar_url": "https://www.superprof.com.br/imagens/anuncios/professor-home-professora-yoga-sao-paulo-aulas-particulares-grupos-hatha-vinyasa-flow-aulas-direcionadas-para-desenvolvimento.jpg",
+      "name": "Gabi Olandoski",
+      "birth": 859680000000,
+      "gender": "F",
+      "services": "Yoga",
+      "created_at": 1586485339063
+    },
+    {
+      "id": 7,
+      "avatar_url": "https://www.superprof.com.br/imagens/anuncios/professor-home-aulas-zumba-fit-dance-conforto-seu-lar-tenha-gostinho-experimentar-essas-duas-modalidades-cuidar-corpo-mente.jpg",
+      "name": "Camila Brandão",
+      "birth": 655257600000,
+      "gender": "F",
+      "services": "Zumba",
+      "created_at": 1586485490585
+    },
+    {
+      "id": 9,
+      "avatar_url": "https://2.bp.blogspot.com/-AF-t-xy7YOQ/Tw8jD6qmyFI/AAAAAAAAC5w/6BjF4ZSszqU/s400/252606.jpg",
+      "name": "Elba Vasquez",
+      "birth": 421632000000,
+      "gender": "F",
+      "services": "Natação, Polo Aquatíco",
+      "created_at": 1586485753541
+    }
+  ]
+}

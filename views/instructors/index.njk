@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <div class="card table-container">
+        <table width="100%">
+            <thead>
+                <tr>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {%for instructor in instructors %}
+                    <tr>
+                        <td>
+                            <span style="background-image: url({{instructor.avatar_url}})"></span>
+                            {{instructor.name}}
+                        </td>
+                        <td>
+                            <div class="serviços">
+                                <span>{{ instructor.services }}</span>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="/instructors/{{instructor.id}}">
+                                <i title="Visualizar {{instructor.name}}" class="material-icons">remove_red_eye</i>
+                            </a>
+                        </td>
+                    </tr>
+                    {%endfor%}
+
+                    <div class="criar" id="criar">
+                        <h1>Instrutores</h1>
+                        <a href="/instructors/create">
+                            <button type="submit">
+                                <i title="Criar Novo Instrutor" class="material-icons">create</i>
+                                Cadastrar Instrutor
+                            </button>
+                        </a>
+                    </div>
+                </tbody>
+            </table>
+
+        </div>
+    {% endblock content %}

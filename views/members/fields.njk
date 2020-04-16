@@ -1,0 +1,81 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="item">
+    <div>Avatar URL
+    </div>
+    <div>
+        <input type="url" name="avatar_url" placeholder="http://" value="{{member.avatar_url}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Nome</div>
+    <div>
+        <input type="text" name="name" placeholder="Nome do Membro" value="{{member.name}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>E-mail</div>
+    <div>
+        <input type="email" name="email" placeholder="Email do Membro" value="{{member.email}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Data de Nascimento</div>
+    <div>
+        <input type="date" name="birth" value="{{member.birth}}">
+    </div>
+</div>
+
+<div class="item">
+    <div>Sexo</div>
+    <div>
+        <span>
+            <input type="radio" name="gender" id="" value="M" {% if member.gender == "M" %} checked="checked" {% endif %}>Masculino
+        </span>
+        <span>
+            <input type="radio" name="gender" id="" value="F" {% if member.gender == "F" %} checked="checked" {% endif %}>Feminino</span>
+    </div>
+</div>
+
+<div class="item">
+    <div>Peso</div>
+    <div>
+        <input type="number" name="weight" placeholder="Peso do Membro" value="{{member.weight}}">
+    </div>
+</div>
+<div class="item">
+    <div>Altura</div>
+    <div>
+        <input type="number" name="height" placeholder="Altura do Membro" value="{{member.height}}">
+    </div>
+</div>
+<div class="item">
+    <div>IMC</div>
+    <div>
+        <select name="imc">
+            <option value="Entre 19 e 24" {%if member.imc == "Entre 19 e 24"%} selected="selected" {%endif%}>Entre 19 e 24</option>
+            <option value="Entre 25 e 29" {%if member.imc == "Entre 25 e 29"%} selected="selected" {%endif%}>Entre 25 e 29</option>
+            <option value="Entre 30 e 34" {%if member.imc == "Entre 30 e 34"%} selected="selected" {%endif%}>Entre 30 e 34</option>
+            <option value="Entre 35 e 40" {%if member.imc == "Entre 35 e 4"%} selected="selected" {%endif%}>Entre 35 e 40</option>
+        </select>
+    </div>
+    <h5 class="titleimc">Não sabe seu IMC? Clique aqui para calcular</h5>
+</div>
+<div id = "modal-imc" class="modal-overlay">
+    <div class="modal">
+        <div class="modal-content" id="content">
+            <h2>Calculadora IMC</h2>
+            <form name="dados" id="form">
+                <input type ="number" name="peso" id="peso" placeholder="Peso">
+                <input type ="number" name="altura" id="altura" placeholder="Altura">
+                <input class = "calc" type="button" value="Calcular!" onclick = "CalculoImc()">
+                <p class = "result" id="result"></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<button type="submit">Salvar</button>
+<script src="/scriptImc.js"></script>
